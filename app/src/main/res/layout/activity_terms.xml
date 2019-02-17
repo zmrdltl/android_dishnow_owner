@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsActivity"
+    android:id="@+id/terms_relative_layout">
+    <!--회원가입 툴바-->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/terms_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            />
+    </android.support.v7.widget.Toolbar>
+    <!--너무 CheckCircle이 작아서 다시 큰 버튼으로 쌌다-->
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="155dp"
+        android:id="@+id/terms_confirm_all_button"
+        android:background="#00ff0000"
+        />
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:background="#00ff0000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="210dp"
+        android:id="@+id/terms_service_button"/>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:background="#00ff0000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="250dp"
+        android:id="@+id/terms_individual_button"/>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:background="#00ff0000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="295dp"
+        android:id="@+id/terms_locationservice_button"/>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:background="#00ff0000"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="335dp"
+        android:id="@+id/terms_marketingreceive_button"/>
+    <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <!--가장 위 동글뱅이들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/terms_smallbutton"
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_dot"
+                android:backgroundTint="@color/color_violet"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_dot"
+                android:backgroundTint="@color/color_bolder"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_dot"
+                android:backgroundTint="@color/color_bolder"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_dot"
+                android:backgroundTint="@color/color_bolder"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <!--디쉬나우 서비스 이용약관-->
+        <TextView
+            android:id="@+id/additional_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="47dp"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:text="디쉬나우 서비스 이용약관"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+        <!--약관 동의-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--모두 확인 동의합니다-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:id="@+id/terms_confirm_all_checkcircle"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/ic_icon_checkcircle"
+                    android:backgroundTint="@color/color_bolder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="17dp"
+                    android:fontFamily="@font/nanumsquareotfregular"
+                    android:text="모두 확인 동의합니다."
+                    android:textColor="@color/color_black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <!--구분선-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="17dp"
+                android:background="@color/color_bolder"></View>
+            <!--(필수) 서비스 이용 약관 동의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/terms_service_checkcircle"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/ic_icon_checkcircle"
+                    android:backgroundTint="@color/color_bolder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="22dp"
+                    android:fontFamily="@font/nanumsquareorflight"
+                    android:text="(필수) 서비스 이용 약관 동의"
+                    android:textColor="@color/color_black"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/terms_service_squarebracket"
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="133dp"
+                    android:background="@drawable/ic_icon_squarebracket"
+                    android:backgroundTint="@color/color_bolder" />
+            </LinearLayout>
+            <!--(필수) 개인정보 처리 방침 동의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/terms_individualinfo_checkcircle"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/ic_icon_checkcircle"
+                    android:backgroundTint="@color/color_bolder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="22dp"
+                    android:fontFamily="@font/nanumsquareorflight"
+                    android:text="(필수) 개인정보 처리방침 동의"
+                    android:textColor="@color/color_black"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/terms_individual_squarebracket"
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="124dp"
+                    android:background="@drawable/ic_icon_squarebracket"
+                    android:backgroundTint="@color/color_bolder" />
+            </LinearLayout>
+            <!--(필수) 위치 기반 서비스 동의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/terms_locationservice_checkcircle"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/ic_icon_checkcircle"
+                    android:backgroundTint="@color/color_bolder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="22dp"
+                    android:fontFamily="@font/nanumsquareorflight"
+                    android:text="(필수) 위치 기반 서비스 동의"
+                    android:textColor="@color/color_black"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/terms_locationservice_squarebracket"
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="133dp"
+                    android:background="@drawable/ic_icon_squarebracket"
+                    android:backgroundTint="@color/color_bolder" />
+            </LinearLayout>
+            <!--(선택) 마케팅 수신 동의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/terms_marketingreceive_checkcircle"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/ic_icon_checkcircle"
+                    android:backgroundTint="@color/color_bolder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="17dp"
+                    android:fontFamily="@font/nanumsquareorflight"
+                    android:text="(선택) 마케팅 수신 동의"
+                    android:textColor="@color/color_black"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/terms_marketingrecieve_squarebracket"
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="162dp"
+                    android:background="@drawable/ic_icon_squarebracket"
+                    android:backgroundTint="@color/color_bolder" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--구분선-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/color_bolder"></View>
+        <!--필수 약관 동의 후 서비스 이용이 가능합니다.-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:gravity="center"
+            android:text="필수 약관 동의 후 서비스 이용이 가능합니다."
+            android:textColor="@color/color_bolder"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!--다음버튼-->
+    <Button
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/terms_next_button"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/color_violet"
+        android:background="@drawable/auth_phone_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:text="다음" />
+</RelativeLayout>

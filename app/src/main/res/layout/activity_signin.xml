@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_background"
+    tools:context=".SigninActivity">
+    <ImageView
+        android:background="@drawable/dishnow_logo_white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signin_title"
+        android:textSize="50dp"
+        android:layout_width="262dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="96dp"
+        android:textColor="#FFFFFF"
+        ></ImageView>
+    <TextView
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_title"
+        android:layout_alignEnd="@+id/signin_title"
+        android:textColor="#FFFFFF"
+        android:text="for 사장님" />
+    <EditText
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/input"
+        android:singleLine="true"
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:id="@+id/signin_idinput"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:textColorHint="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="1dp"
+        android:hint="아이디" />
+
+    <EditText
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/input"
+        android:singleLine="true"
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:id="@+id/signin_passwordinput"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:textColorHint="#FFFFFF"
+        android:layout_below="@+id/signin_idinput"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호"
+        android:paddingTop="1dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:fontFamily="@font/nanumsquareotfbold"
+        android:id="@+id/signin_wronginput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="380dp"
+        android:textSize="16dp"
+        android:textColor="#E60012"
+        />
+
+    <Button
+        android:fontFamily="@font/nanumsquareotfbold"
+        android:id="@+id/signin_loginButton"
+        android:layout_width="245dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_marginTop="420dp"
+        android:textSize="18dp"
+        android:background="@drawable/signin_button"
+        android:layout_alignLeft="@+id/signin_passwordinput"
+        android:text="로그인"
+        android:textColor="#733FFF"
+        android:textAllCaps="false" />
+    <Button
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:id="@+id/signin_findidButton"
+        android:layout_width="wrap_content"
+        android:textColor="#441AAF"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00ff0000"
+        android:layout_below="@id/signin_loginButton"
+        android:text="아이디 또는 비밀번호를 잊으셨나요?"
+         />
+    <Button
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/signin_signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:background="#00ff0000"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        />
+
+</RelativeLayout>

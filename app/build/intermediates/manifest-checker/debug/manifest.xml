@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.picke.dishnow_owner"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme.NoActionBar" >
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
+
+        <activity
+            android:name="com.picke.dishnow_owner.SigninActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.picke.dishnow_owner.MainActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.JoinActivity"
+            android:label="" />
+        <activity android:name="com.picke.dishnow_owner.JoinedActivity" />
+        <activity android:name="com.picke.dishnow_owner.Registration_BusinessActivity" />
+        <activity android:name="com.picke.dishnow_owner.PopupActivity" />
+        <activity android:name="com.picke.dishnow_owner.Utility.JusoActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.VerificationActivity"
+            android:label="" />
+        <activity
+            android:name="com.picke.dishnow_owner.Registration_RestaurantActivity"
+            android:label="" />
+        <activity
+            android:name="com.picke.dishnow_owner.FindidpassActivity"
+            android:label="" />
+        <activity
+            android:name="com.picke.dishnow_owner.FindemailActivity"
+            android:label="" />
+        <activity android:name="com.picke.dishnow_owner.RegisterGuideActivity" />
+        <activity android:name="com.picke.dishnow_owner.JudgingActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.Additional_InfoActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/com_kakao_login_button"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.picke.dishnow_owner.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

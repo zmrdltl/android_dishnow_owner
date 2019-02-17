@@ -1,0 +1,4 @@
+#Fri Feb 15 22:13:38 KST 2019
+base.0=C\:\\Users\\hong\\Desktop\\android_dishnow_owner\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Fri Feb 15 22:13:38 KST 2019
+2.base=C\:\\Users\\hong\\Desktop\\android_dishnow_owner\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+0.path=classes.dex
+2.baseType=DIRECTORY
+3.base=C\:\\Users\\hong\\Desktop\\android_dishnow_owner\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+2.set=ASSET
+1.path=TermsMarketingReceive.txt
+4.base=C\:\\Users\\hong\\Desktop\\android_dishnow_owner\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+count=5
+2.path=TermsService.txt
+4.set=ASSET
+3.path=TermsIndividualInfo.txt
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=TermsLocationService.txt
+1.baseType=DIRECTORY
+0.base=C\:\\Users\\hong\\Desktop\\android_dishnow_owner\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.baseType=DIRECTORY
+3.set=ASSET
+1.base=C\:\\Users\\hong\\Desktop\\android_dishnow_owner\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+4.baseType=DIRECTORY
+0.set=DEX
