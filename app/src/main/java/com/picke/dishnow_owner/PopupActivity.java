@@ -118,4 +118,7 @@ public class PopupActivity extends AppCompatActivity {
         mSocket.emit("res_id", finalJsonObject_id);
         mSocket.connect();
     }
+    public void adfa(){
+
+    }
 }
