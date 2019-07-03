@@ -121,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
         mSocket.connect();
     }
     
-    public void aaa(){
-        
+    public void asdfsa(){
     }
 }
