@@ -292,4 +292,7 @@ public class TermsActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    
+    public void adf(){
+    }
 }
