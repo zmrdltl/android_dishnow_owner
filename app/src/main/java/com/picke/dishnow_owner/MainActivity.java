@@ -120,4 +120,8 @@ public class MainActivity extends AppCompatActivity {
         mSocket.emit("res_id", jsonObject_id);
         mSocket.connect();
     }
+    
+    public void aaa(){
+        
+    }
 }
