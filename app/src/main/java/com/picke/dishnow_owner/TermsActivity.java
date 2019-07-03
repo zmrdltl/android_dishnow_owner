@@ -295,6 +295,7 @@ public class TermsActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     
-    public void adf(){
+    public int adf(MenuItem item){
+        return 1;
     }
 }
