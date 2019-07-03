@@ -177,6 +177,7 @@ public class TermsActivity extends AppCompatActivity {
                 }
             }
         });
+        
         Blocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -281,7 +282,8 @@ public class TermsActivity extends AppCompatActivity {
         });
 
     }
-
+    public int aasdf(){
+    }
     //툴바 뒤로가기 버튼 클릭시
     @Override
     public boolean onOptionsItemSelected(MenuItem item ){
